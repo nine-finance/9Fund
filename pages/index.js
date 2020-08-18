@@ -3,6 +3,8 @@ import factory from  '../ethereum/factory';
 import { Card, Button, Grid } from 'semantic-ui-react';
 import Layout from '../components/Layout';
 import { Link } from '../routes';
+import styles from '../components/header.module.css';
+import utilStyles from '../styles/utils.module.css';
 
 class CampaignIndex extends Component{
     static async getInitialProps() {
@@ -32,6 +34,7 @@ class CampaignIndex extends Component{
                     <Grid>
                         <Grid.Row width={10}>
                             <div>
+                                <br/>
                                 <br/>
                                 {this.renderCampaigns()}
                             </div>
